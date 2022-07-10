@@ -1,0 +1,118 @@
+.movies-card {
+    max-width: 360px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+}
+.movies-card__top {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.movies-card__description {
+  margin: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+  
+.movies-card__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #FFF;
+  margin: 0;
+}
+
+.movies-card__duration {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.movies-card__bookmark {
+  width: 100px;
+  height: 29px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 18px;
+}
+
+.movies-card__bookmark_state_active {
+  background-image: url(../../../images/icon__saved.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 29px;
+  background-color: #EE3465;
+  border-radius: 30px;
+
+}
+
+.movies-card__bookmark_state_inactive {
+  background-image: url(../../../images/save__btn.png);
+}
+
+.movies-card__bookmark:hover {
+  opacity: 0.6;
+}
+
+.movies-card__delete-btn {
+  background-image: url(../../../images/icon__delete.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #313131;
+  border: none;
+  width: 100px;
+  height: 29px;
+  border-radius: 30px;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  margin: 18px;
+}
+
+.movies-card__delete-btn:hover {
+  opacity: 0.6;
+}
+
+.movies-card__img {
+  width: 364px;
+  height: 203px;
+  object-fit: cover;
+}
+
+@media (max-width: 1210px) {
+  .movies-card {
+    max-width: 342px;
+  }
+
+  .movies-card__img {
+    width: 342px;
+    height: 190px;
+  }
+}
+
+@media (max-width: 730px) {
+  .movies-card {
+    max-width: 300px;
+  }
+  .movies-card__img {
+    width: 300px;
+  }
+
+  .movies-card__bookmark {
+    margin: 14px;
+  }
+}

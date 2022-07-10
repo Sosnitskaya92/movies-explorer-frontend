@@ -1,0 +1,139 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  justify-content: right;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.3s;
+  z-index: 1;
+}
+  
+.popup_opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__container {
+  max-width: 520px;
+  height: 100vh;
+  width: 100%;
+  background-color: #202020;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url(../../images/burger__close-btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popup__close-btn:hover {
+  opacity: 0.6;
+}
+
+.popup__menu-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 159px 0 0;
+}
+
+.popup__menu-list-item {
+  margin-bottom: 28px;
+}
+
+.popup__menu-list-item:last-of-type {
+  margin: 0;
+}
+
+.popup__menu-list-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #FFF;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup__menu-list-link-active {
+  text-decoration: none;
+  border-bottom: 2px solid #FFF;
+  padding-bottom: 5px;
+}
+
+.popup__menu-list-link:hover {
+  opacity: 0.6;
+}
+
+.popup__account-btn {
+  position: absolute;
+  bottom: 99px;
+  right: 210px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #FFF;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup__icon {
+  background-color:#313131;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/icon_account.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 13px;
+}
+
+.popup__account-btn:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .popup__container {
+    max-width: 420px;
+  }
+  .popup__account-btn {
+    right: 155px;
+  }
+}
+
+@media (max-width: 430px) {
+  .popup__container {
+    max-width: 100%;
+  }
+  .popup__account-btn {
+    right: calc(100vw - 68%);
+    bottom: 55px;
+  }
+}

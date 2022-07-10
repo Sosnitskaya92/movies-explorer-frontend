@@ -1,5 +1,5 @@
 import React from "react";
-import linkIcon from '../../images/arrow.svg'
+import linkIcon from "../../../images/arrow.svg";
 
 function Portfolio() {
   return (

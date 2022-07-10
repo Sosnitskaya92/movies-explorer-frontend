@@ -1,177 +1,177 @@
-.about-project {/*все*/
-    width: 100%;
-    padding: 110px 0;
-  }
-  
-  .section-title {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: -0.04em;
-    color: #fff;
-    margin: 0 0 23px;
-  }
-  
-  .section-line {
-    display: block;
-    border-bottom: 1px solid #DADADA;
-  }
-  
-  .about-project__list {
-    display: flex;
-    padding: 0;
-    margin: 70px 0 110px;
-    list-style: none;
-  }
-  
-  .about-project__list-item {
-    margin-right: 40px;
-  }
-  .about-project__list-item:last-of-type {
-    margin-right: 0;
+.about-project {
+  width: 100%;
+  padding: 110px 0;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #FFF;
+  margin: 0 0 23px;
+}
+
+.section-line {
+  display: block;
+  border-bottom: 1px solid #DADADA;
+}
+
+.about-project__list {
+  display: flex;
+  padding: 0;
+  margin: 70px 0 110px;
+  list-style: none;
+}
+
+.about-project__list-item {
+  margin-right: 40px;
+}
+.about-project__list-item:last-of-type {
+  margin-right: 0;
+}
+
+.about-project__list-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #FFF;
+}
+
+.about-project__list-text {
+  margin: 26px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFF;
+  max-width: 550px;
+  width: 100%;
+}
+
+.about-project__diagramm {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.about-project__diagramm-item {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-project__diagramm-item:last-of-type {
+  max-width: 912px;
+}
+
+.about-project__diagramm-time {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  margin: 0;
+  padding: 9px 0;
+}
+
+.about-project__diagramm-time_bg-color_green {
+  background-color: #3DDC84;
+}
+
+.about-project__diagramm-time_bg-color_grey {
+  background-color: #303030;
+}
+
+.about-project__diagramm-time_text-color_white {
+  color: #FFF;
+}
+
+.about-project__diagramm-caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #8B8B8B;
+  text-align: center;
+  margin: 14px 0 0;
+}
+
+@media (max-width: 768px) {
+  .about-project {
+    padding: 90px 0px;
   }
 
-  .about-project__list-title {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.04em;
-    color: #fff;
+  .about-project__list {
+    margin-bottom: 90px;
   }
-  
+
   .about-project__list-text {
-    margin: 26px 0 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #fff;
-    max-width: 550px;
-    width: 100%;
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 18px;
   }
-  
-  .about-project__diagramm {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100%;
-  }
-  
+
   .about-project__diagramm-item {
-    max-width: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    max-width: 140px;
   }
 
   .about-project__diagramm-item:last-of-type {
-    max-width: 912px;
+    max-width: 528px;
   }
-  
-  .about-project__diagramm-time {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    margin: 0;
-    padding: 9px 0;
-  }
-  
-  .about-project__diagramm-time_bg-color_green {
-    background-color: #3DDC84;
-  }
-  
-  .about-project__diagramm-time_bg-color_grey {
-    background-color: #303030;
-  }
-  
-  .about-project__diagramm-time_text-color_white {
-    color: #FFF;
-  }
-  
-  .about-project__diagramm-caption {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    color: #8B8B8B;
-    text-align: center;
-    margin: 14px 0 0;
-  }
-  
-  @media (max-width: 768px) {
-    .about-project { /**/
-      padding: 90px 0px;
-    }
-  
-    .about-project__list {
-      margin-bottom: 90px;
-    }
+}
 
-    .about-project__list-text {
-      margin-top: 22px;
-      font-size: 12px;
-      line-height: 18px;
-    }
-  
-    .about-project__diagramm-item {
-      max-width: 140px;
-    }
-  
-    .about-project__diagramm-item:last-of-type {
-      max-width: 528px;
-    }
+@media (max-width: 540px) {
+  .about-project {
+    padding: 70px 0;
   }
-  
-  @media (max-width: 540px) {
-    .about-project {
-      padding: 70px 0;
-    }
-  
-    .section-title {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 28px;
-    }
-  
-    .about-project__list {
-      flex-direction: column;
-      margin: 60px 0;
-    }
-  
-    .about-project__list-item {
-      margin: 0 0 56px;
-    }
-  
-    .about-project__list-item:last-of-type {
-      margin: 0;
-    }
-  
-    .about-project__diagramm-item {
-      max-width: 100px;
-    }
-  
-    .about-project__diagramm-item:last-of-type {
-      max-width: 184px;
-    }
-  
-    .about-project__list-title {
-      font-size: 18px;
-      line-height: 1.22;
-    }
-  
-    .about-project__list-text {
-      font-size: 11px;
-      line-height: 22px;
-    }
-  
-    .about-project__diagramm-time {
-      font-size: 11px;
-      line-height: 16px;
-    }
-  
-    .about-project__diagramm-caption {
-      font-size: 11px;
-      line-height: 13px;
-    }
+
+  .section-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 28px;
   }
+
+  .about-project__list {
+    flex-direction: column;
+    margin: 60px 0;
+  }
+
+  .about-project__list-item {
+    margin: 0 0 56px;
+  }
+
+  .about-project__list-item:last-of-type {
+    margin: 0;
+  }
+
+  .about-project__diagramm-item {
+    max-width: 100px;
+  }
+
+  .about-project__diagramm-item:last-of-type {
+    max-width: 184px;
+  }
+
+  .about-project__list-title {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .about-project__list-text {
+    font-size: 11px;
+    line-height: 22px;
+  }
+
+  .about-project__diagramm-time {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-project__diagramm-caption {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

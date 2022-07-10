@@ -8,10 +8,7 @@ function Techs() {
         <span className="section-line"></span>
         <div className="techs__container">
           <h3 className="techs__title">7 технологий</h3>
-          <p className="techs__caption">
-            На курсе веб-разработки мы освоили технологии, которые применили в
-            дипломном проекте.
-          </p>
+          <p className="techs__caption">На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
           <ul className="techs__list">
             <li className="techs__list-item">
               <p className="techs__list-text">HTML</p>

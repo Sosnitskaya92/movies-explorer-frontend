@@ -1,13 +1,13 @@
 import React from "react";
 import MoviesCard from "../MoviesCard/MoviesCard";
 import { Route } from "react-router-dom";
-import Preloader from "../Preloader/Preloader";
+// import Preloader from "../Preloader/Preloader";
 
 function MoviesCardList({ cards }) {
   return (
     <section className="cards">
       <div className="container">
-        <Preloader />
+        {/* <Preloader /> */}
         <ul className="cards__list">
           {cards.map((card) => (
             <MoviesCard key={card.id} card={card} />

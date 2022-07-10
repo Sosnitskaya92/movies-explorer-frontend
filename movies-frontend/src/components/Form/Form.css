@@ -1,183 +1,183 @@
 .account-form {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
+.account-form__container {
+  max-width: 396px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.account-form__logo {
+  display: block;
+  background-image: url(../../images/logo.svg);
+  width: 38px;
+  height: 38px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.account-form__logo:hover {
+  opacity: 0.6;
+}
+
+.account-form__title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #FFF;
+  margin: 40px 0;
+}
+
+.account-form {
+  width: 100%;
+}
+
+.account-form__field {
+  padding: 0;
+  border: none;
+  margin: 0 0 24px;
+}
+
+.account-form__field:last-of-type {
+  margin: 0;
+}
+
+.account-form__input-label {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8B8B8B;
+  margin: 0;
+}
+
+.account-form__input {
+  display: block;
+  margin-top: 5px;
+  max-width: 100%;
+  padding: 0 0 10px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #FFF;
+  outline: none;
+  border-bottom: 1px solid #424242;
+}
+
+.form__input-error {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #EE3465;
+  opacity: 0;
+}
+
+.account-form__input:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #EE3465;
+}
+
+.account-form__input:valid {
+  border-bottom: 1px solid #4285F4;
+}
+
+.form__input-error_active {
+  opacity: 1;
+}
+
+.account-form__footer-login {
+  margin-top: 221px;
+}
+
+.account-form__footer-register {
+  margin-top: 152px;
+}
+
+.account-form__submit-btn {
+  width: 100%;
+  padding: 13px 0 15px;
+  background-color: #4285F4;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #FFF;
+  border: none;
+}
+
+.account-form__submit-btn:hover {
+  opacity: 0.6;
+}
+
+.account-form__caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #8B8B8B;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.account-form__caption-link {
+  text-decoration: none;
+  color: #4285F4;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.account-form__caption-link:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
   .account-form__container {
-    max-width: 396px;
-    margin: 0 auto;
-    padding: 70px 0;
+    padding: 232px 0;
   }
-  
-  .account-form__logo {
-    display: block;
-    background-image: url(../../images/logo.svg);
-    width: 38px;
-    height: 38px;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .account-form__logo:hover {
-    opacity: 0.6;
-  }
-  
-  .account-form__title {
-    width: 100%;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    color: #FFF;
-    margin: 40px 0;
-  }
-  
-  .account-form {
-    width: 100%;
-  }
-  
-  .account-form__field {
-    padding: 0;
-    border: none;
-    margin: 0 0 24px;
-  }
-  
-  .account-form__field:last-of-type {
-    margin: 0;
-  }
-  
-  .account-form__input-label {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    color: #8B8B8B;
-    margin: 0;
-  }
-  
-  .account-form__input {
-    display: block;
-    margin-top: 5px;
-    max-width: 100%;
-    padding: 0 0 10px;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    color: #FFF;
-    outline: none;
-    border-bottom: 1px solid #424242;
-  }
-  
-  .form__input-error {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    color: #EE3465;
-    opacity: 0;
-  }
-
-  .account-form__input:focus {
-    background-color: transparent;
-    border-bottom: 1px solid #EE3465;
-  }
-
-  .account-form__input:valid {
-    border-bottom: 1px solid #4285F4;
-  }
-  
-  .form__input-error_active {
-    opacity: 1;
-  }
-  
-  .account-form__footer-login {
-    margin-top: 221px;
-  }
-  
   .account-form__footer-register {
     margin-top: 152px;
   }
-  
-  .account-form__submit-btn {
-    width: 100%;
-    padding: 13px 0 15px;
-    background-color: #4285F4;
-    border-radius: 3px;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    color: #FFF;
-    border: none;
+  .account-form__footer-login {
+    margin-top: 221px;
   }
-  
-  .account-form__submit-btn:hover {
-    opacity: 0.6;
+}
+
+@media (max-width: 430px) {
+  .account-form__logo {
+    margin: 0 auto;
   }
-  
-  .account-form__caption {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    color: #8B8B8B;
+  .account-form__title {
     text-align: center;
-    margin: 16px 0 0;
+    margin: 50px 0 80px;
   }
-  
-  .account-form__caption-link {
-    text-decoration: none;
-    color: #4285F4;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+  .account-form__container {
+    max-width: 320px;
+    padding: 56px 0 30px;
   }
-  
-  .account-form__caption-link:hover {
-    opacity: 0.6;
+  .account-form__footer-register {
+    margin-top: 299px;
   }
-  
-  @media (max-width: 768px) {
-    .account-form__container {
-      padding: 232px 0;
-    }
-    .account-form__footer-register {
-      margin-top: 152px;
-    }
-    .account-form__footer-login {
-      margin-top: 221px;
-    }
+  .account-form__footer-login {
+    margin-top: 309px;
   }
-  
-  @media (max-width: 430px) {
-    .account-form__logo {
-      margin: 0 auto;
-    }
-    .account-form__title {
-      text-align: center;
-      margin: 50px 0 80px;
-    }
-    .account-form__container {
-      max-width: 320px;
-      padding: 56px 0 30px;
-    }
-    .account-form__footer-register {
-      margin-top: 299px;
-    }
-    .account-form__footer-login {
-      margin-top: 309px;
-    }
-    .account-form__caption {
-      font-size: 12px;
-      line-height: 15px;
-    }
-    .account-form__submit-btn {
-      font-size: 12px;
-      line-height: 15px;
-    }
+  .account-form__caption {
+    font-size: 12px;
+    line-height: 15px;
   }
-  
-  @media (max-width: 360px) {
-    .account-form__container {
-      max-width: 260px;
-    }
+  .account-form__submit-btn {
+    font-size: 12px;
+    line-height: 15px;
   }
+}
+
+@media (max-width: 360px) {
+  .account-form__container {
+    max-width: 260px;
+  }
+}

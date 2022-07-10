@@ -1,7 +1,7 @@
 import React from "react";
 import MoviesCardList from "../../components/Movies/MoviesCardList/MoviesCardList";
-import SearchForm from "../SeachForm/SeachForm";
-import { cards } from "../../utils/savedCard"
+import SearchForm from "../Movies/SeachForm/SeachForm";
+import { cards } from "../../utils/savedCard";
 
 function SavedMovies() {
   

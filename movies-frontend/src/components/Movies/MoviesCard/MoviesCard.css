@@ -1,18 +1,18 @@
 .movies-card {
-    max-width: 360px;
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    justify-content: space-between;
+  max-width: 360px;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
 }
 .movies-card__top {
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: space-between;
-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .movies-card__description {

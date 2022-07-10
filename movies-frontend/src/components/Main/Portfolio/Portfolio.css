@@ -1,16 +1,16 @@
 .portfolio {
-    margin-top: 100px;
-  }
-  
-  .portfolio__title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.11;
-    margin: 0;
-    color: #8b8b8b;
-  }
-  
-  .portfolio__links {
+  margin-top: 100px;
+}
+
+.portfolio__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.11;
+  margin: 0;
+  color: #8B8B8B;
+}
+
+.portfolio__links {
   margin: 50px 0 0;
   padding: 0;
   list-style: none;
@@ -58,7 +58,7 @@
 
 .portfolio__icon {
   width: 29px;
-  height: 60px;
+  height: 29px;
 }
   
 @media (max-width: 880px) {
@@ -68,11 +68,17 @@
   .portfolio__link {
     font-size: 28px;
   }
+
+  .portfolio__icon {
+    width: 27px;
+    height: 27px;
+  }
+
 }
 
 @media (max-width: 550px) {
   .portfolio {
-    margin-top: 69px;
+    margin-top: 70px;
   }
   .portfolio__links {
     margin-top: 40px;
@@ -83,9 +89,10 @@
     font-size: 18px;
     line-height: 28px;
   }
-
+  
   .portfolio__icon {
     width: 18px;
-    height: 28px;
+    height: 18px;
   }
+
 }

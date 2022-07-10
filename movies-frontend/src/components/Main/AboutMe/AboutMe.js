@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../images/Student.png";
+import avatar from "../../../images/Student.png";
 import Portfolio from "../Portfolio/Portfolio";
 
 function AboutMe() {

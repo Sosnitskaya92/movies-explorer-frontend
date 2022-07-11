@@ -1,0 +1,141 @@
+.profile {
+  width: 100%;
+}
+  
+.profile__container {
+  margin: 0 auto;
+  max-width: 410px;
+  padding: 74px 0 70px;
+}
+
+.profile__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+}
+
+.profile__form {
+  width: 100%;
+  margin-top: 123px;
+}
+
+.profile__form-field {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #424242;
+  padding: 0 0 16px;
+  margin: 0 0 17px;
+}
+
+.profile__form-field:last-of-type {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.profile__form-input-name {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  color: #FFF;
+}
+
+.profile__form-input {
+  background-color: transparent;
+  outline: none;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #FFF;
+  text-align: right;
+  border: none;
+}
+
+.profile__footer {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__edit-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FFF;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.profile__edit-btn:hover {
+  opacity: 0.6;
+}
+
+.profile__exit-btn {
+  width: 100%;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #EE3465;
+  text-align: center;
+  margin-top: 16px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.profile__exit-btn:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .profile__container {
+    padding: 236px 0 269px;
+  }
+  .profile__form {
+    margin-top: 96px;
+  }
+  .profile__footer {
+    margin-top: 210px;
+  }
+}
+
+@media (max-width: 470px) {
+  .profile__container {
+    max-width: 320px;
+    padding: 70px 0 40px;
+  }
+  .profile__footer {
+    margin-top: 379px;
+  }
+  .profile__form {
+    margin-top: 80px;
+  }
+  .profile__edit-btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .profile__exit-btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .profile__container {
+    max-width: 260px;
+  }
+}

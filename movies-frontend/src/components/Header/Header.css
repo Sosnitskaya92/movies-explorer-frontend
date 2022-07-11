@@ -1,0 +1,162 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #073042;
+  box-sizing: border-box;
+  padding: 18px 0;
+}
+
+.header_bg-color_black {
+  background-color: #202020;
+}
+
+.header__container {
+  width: 89.06%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+} 
+
+.header__container-burger {
+  display: none;
+}
+
+  .header__logo {
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__logo:hover {
+  opacity: 0.6;
+}
+
+.header__burger-menu-btn {
+  background-image: url(../../images/burger-menu.svg);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.header__burger-menu-btn:hover {
+  opacity: 0.6;
+}
+
+.header__nav-register-btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__nav-register-btn:hover {
+  opacity: 0.6;
+}
+
+.header__nav-login-btn {
+  font-weight: 500;
+  line-height: 1.33;
+  font-size: 12px;
+  padding: 8px 20px;
+  background-color: #3ddc84;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__nav-login-btn:hover {
+  opacity: 0.6;
+}
+
+.header__nav-movies-link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 16px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.header__nav-movies-link-active {
+  font-weight: 500;
+}
+
+.header__nav-movies-link:hover {
+  opacity: 0.6;
+}
+
+.header__account-btn {
+  padding: 8px 20px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__icon {
+  background-color:#313131;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/icon_account.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 13px;
+}
+
+.header__account-btn:hover {
+  opacity: 0.6;
+}
+
+.header__container-left {
+  display: flex;
+  align-items: center;
+  width: 294px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .header__container-burger {
+    display: flex;
+  }
+  .header__container-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__nav-register-btn {
+    margin-right: 14px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .header__nav-login-btn {
+    padding: 5px 12px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}

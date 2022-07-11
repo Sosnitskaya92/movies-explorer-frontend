@@ -99,6 +99,10 @@
 }
 
 @media (max-width: 340px) {
+  .techs {
+    background-color: #202020;
+  }
+  
   .techs__title {
     font-size: 30px;
     line-height: 36px;

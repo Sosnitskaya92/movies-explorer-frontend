@@ -6,7 +6,7 @@ function SearchForm() {
       <div className="container">
         <form className="form">
           <fieldset className="form__fieldset">
-            <input className="form__input" type="text" placeholder="Фильм" name="searchText" />
+            <input className="form__input" type="text" placeholder="Фильм" name="searchText" required />
             <button className="form__submit-btn" type="submit"></button>
           </fieldset>
           <fieldset className="form__fieldset-checkbox">

@@ -62,7 +62,7 @@
 }
 
 .movies-card__bookmark_state_inactive {
-  background-image: url(../../../images/save__btn.png);
+  background-image: url(../../../images/save__button.svg);
 }
 
 .movies-card__bookmark:hover {

@@ -175,3 +175,9 @@
     line-height: 13px;
   }
 }
+
+@media (max-width: 340px) {
+  .section-line-black {
+    border-bottom: 1px solid #000;
+  }
+}

@@ -120,10 +120,5 @@ class MainApi {
     apiUrl: "https://api.diploma.sosnitskaya.nomoreparties.sbs",
     contentType: "application/json",
   });
-
-  // const mainApi = new MainApi({
-  //   apiUrl: "http://localhost:3000",
-  //   contentType: "application/json",
-  // });
   
   export default mainApi;

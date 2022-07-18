@@ -1,15 +1,32 @@
 import React from "react";
 import MoviesCardList from "../../components/Movies/MoviesCardList/MoviesCardList";
 import SearchForm from "../Movies/SeachForm/SeachForm";
-import { cards } from "../../utils/savedCard";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
-function SavedMovies() {
+function SavedMovies({ savedMovies, onDeleteMovie, setSavedMoviesSearchText, onRenderLoading, onChecked, onCheckedSavedMovies, isCheckedSavedMovies, isThereSortedSavedMovies, isSubmitting, loggedIn }) {
   
   return (
-    <main className="main">
-      <SearchForm />
-      <MoviesCardList cards={cards} />
-    </main>
+    <>
+      <Header loggedIn={loggedIn} />
+      <main className="main">
+        <SearchForm 
+          setSavedMoviesSearchText={setSavedMoviesSearchText}
+          onRenderLoading={onRenderLoading}
+          onChecked={onChecked}
+          onCheckedSavedMovies={onCheckedSavedMovies}
+          isCheckedSavedMovies={isCheckedSavedMovies}
+        />
+        <MoviesCardList 
+          movies={savedMovies}
+          onDeleteMovie={onDeleteMovie}
+          savedMovies={savedMovies}
+          isThereSortedSavedMovies={isThereSortedSavedMovies}
+          isSubmitting={isSubmitting}
+        />
+      </main>
+      <Footer />
+    </>
   );
 }
 

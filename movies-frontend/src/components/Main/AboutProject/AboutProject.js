@@ -1,6 +1,7 @@
 import React from "react";
 
 function AboutProject() {
+  
   return (
     <section id="about-project" className="about-project">
       <div className="container">

@@ -24,13 +24,18 @@
 
 .profile__form-field {
   border: none;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #424242;
+  padding: 0 0 16px;
+  margin: 0 0 17px;
+}
+
+.profile__input-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #424242;
-  padding: 0 0 16px;
-  margin: 0 0 17px;
 }
 
 .profile__form-field:last-of-type {
@@ -99,6 +104,19 @@
 
 .profile__exit-btn:hover {
   opacity: 0.6;
+}
+
+.profile__success-request-text {
+  color: #00996b;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+}
+
+.profile__edit-btn:disabled {
+  opacity: 1;
+  cursor: default;
+  color: #c0c0c0;
 }
 
 @media (max-width: 768px) {

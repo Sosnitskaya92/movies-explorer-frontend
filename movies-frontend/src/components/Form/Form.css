@@ -136,6 +136,24 @@
   opacity: 0.6;
 }
 
+.account-form__submit-btn:disabled {
+  background-color: #f8f8f8;
+  color: #c2c2c2;
+  cursor: default;
+  opacity: 1;
+}
+.account-form__submit-btn:disabled:hover {
+  opacity: 1;
+}
+
+.account-form__server-error {
+  color: #ee3465;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+}
+
 @media (max-width: 768px) {
   .account-form__container {
     padding: 232px 0;

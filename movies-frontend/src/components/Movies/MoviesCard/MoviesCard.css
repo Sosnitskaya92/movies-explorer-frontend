@@ -93,6 +93,12 @@
   object-fit: cover;
 }
 
+.movies-card__trailer-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 @media (max-width: 1210px) {
   .movies-card {
     max-width: 342px;

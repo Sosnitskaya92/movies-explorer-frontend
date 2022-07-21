@@ -43,6 +43,13 @@
   opacity: 0.6;
 }
 
+.cards__nothing-found-text {
+  color: #404040;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+
 @media (max-width: 1090px) {
   .cards__list {
     grid-template-columns: repeat(2, min-content);

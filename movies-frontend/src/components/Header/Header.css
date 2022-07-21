@@ -1,9 +1,12 @@
 .header {
   width: 100%;
   margin: 0 auto;
-  background-color: #073042;
   box-sizing: border-box;
   padding: 18px 0;
+}
+
+.header_bg-color_dark-blue {
+  background-color: #073042;
 }
 
 .header_bg-color_black {

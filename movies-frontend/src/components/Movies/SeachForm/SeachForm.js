@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-function SearchForm({ onChecked, onSearchText, onRenderLoading, onCheckedSavedMovies, isChecked, isCheckedSavedMovies, setSavedMoviesSearchText }) {
+function SearchForm({ onChecked, searchText, onSearchText, onRenderLoading, onCheckedSavedMovies, isChecked, isCheckedSavedMovies, setSavedMoviesSearchText }) {
 
   let location = useLocation();
-  const [text, setText] = useState("");
+  const [text, setText] = useState(searchText);
   const [errorClassName, setErrorClassName] = useState(
     "form__input-error text-input-error"
   );

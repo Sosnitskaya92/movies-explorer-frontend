@@ -7,6 +7,7 @@ import mainApi from '../../utils/MainApi';
 import movieApi from '../../utils/MoviesApi';
 import { filterCheckedMovies, filterMovies } from '../../utils/movieFilter';
 import useWindowSize from '../../utils/useWindowSize';
+import { LargeDisplay, MediumDisplay, SmallDisplay } from '../../utils/constants';
 
 const getSortedMovies = (movies, query, isShort) => {
   const savedMoviesKey = 'savedMovies';
@@ -29,8 +30,7 @@ const getSortedMovies = (movies, query, isShort) => {
     ? filterCheckedMovies(movies, query)
     : filterMovies(movies, query);
 
-  savedMovies.push({ query, isShort, list: moviesFormAPI });
-  localStorage.setItem(savedMoviesKey, JSON.stringify(savedMovies));
+  localStorage.setItem(savedMoviesKey, JSON.stringify([{ query, isShort, list: moviesFormAPI }]));
 
   console.log('loaded from API');
   return moviesFormAPI;
@@ -81,11 +81,11 @@ function Movies({ onRenderLoading, isSubmitting, loggedIn }) {
 
   useEffect(() => {
     if (width > 768) {
-      return setVisible(12);
+      return setVisible(LargeDisplay);
     } else if (width <= 768 && width > 321) {
-      return setVisible(8);
+      return setVisible(MediumDisplay);
     } else if (width <= 320) {
-      return setVisible(5);
+      return setVisible(SmallDisplay);
     }
   }, [width]);
 

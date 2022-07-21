@@ -12,10 +12,11 @@ import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import mainApi from '../../utils/MainApi';
 import getContent from '../../utils/auth';
+import { CONFLICT_ERROR, UNAUTHORIZED_ERROR } from '../../utils/constants'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState({});
+  const [currentUser, setCurrentUser] = useState(null);
 
   const [errorStatus, setErrorStatus] = useState(false);
   const [errorInfoText, setErrorInfoText] = useState('');
@@ -40,6 +41,7 @@ function App() {
         }
       })
       .catch((err) => {
+        setCurrentUser({});
         console.log(err);
       });
   };
@@ -83,7 +85,7 @@ function App() {
           });
       })
       .catch((err) => {
-        if (err.status === 409) {
+        if (err.status === CONFLICT_ERROR) {
           setErrorStatus(true);
           setErrorInfoText('Пользователь с таким email уже существует.');
         } else {
@@ -103,7 +105,7 @@ function App() {
         history.push('/movies');
       })
       .catch((err) => {
-        if (err.status === 401) {
+        if (err.status === UNAUTHORIZED_ERROR) {
           setErrorStatus(true);
           setErrorInfoText('Вы ввели неправильный логин или пароль.');
         }

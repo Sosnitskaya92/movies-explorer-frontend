@@ -79,7 +79,7 @@ function Form({ onLogin, onRegister, errorStatus, errorInfoText, setErrorStatus 
             <form className="account-form" name="login" onSubmit={handleLoginFormSubmit}>
               <fieldset className="account-form__field">
                 <label className="account-form__input-label">email</label>
-                <input className="account-form__input" type="email" id="login-email-input" name="loginEmail" value={email} autoComplete="off" required={true} noValidate onChange={handleEmailChange} />
+                <input className="account-form__input" type="email" id="login-email-input" name="loginEmail" value={email} autoComplete="off" required={true} noValidate onChange={handleEmailChange} pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" />
                 <span className={`form__input-error login-email-input-error ${!emailValidation.isEmailValid ? "form__input-error_active" : ""}`}>{emailValidation.emailValidationMessage}</span>
               </fieldset>
               <fieldset className="account-form__field">
@@ -115,7 +115,7 @@ function Form({ onLogin, onRegister, errorStatus, errorInfoText, setErrorStatus 
               </fieldset>
               <fieldset className="account-form__field">
                 <label className="account-form__input-label">email</label>
-                <input className="account-form__input" id="register-email-input" type="email" name="registerEmail" value={email || ""} autoComplete="off" required={true} noValidate onChange={handleEmailChange} />
+                <input className="account-form__input" id="register-email-input" type="email" name="registerEmail" value={email || ""} autoComplete="off" required={true} noValidate onChange={handleEmailChange} pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"/>
                 <span className={`form__input-error register-email-input-error ${!emailValidation.isEmailValid ? "form__input-error_active" : ""}`}>{emailValidation.emailValidationMessage}</span>
               </fieldset>
               <fieldset className="account-form__field">

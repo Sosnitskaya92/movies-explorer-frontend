@@ -16,7 +16,7 @@ function MoviesCardList({ movies, visible, loadMore, isSubmitting, onDeleteMovie
           <ul className="cards__list">
             {movies.slice(0, visible).map((movie) => (
               <MoviesCard
-                key={movie._id}
+                key={movie.id}
                 movie={movie}
                 movies={movies}
                 onHandleBookmark={onHandleBookmark}

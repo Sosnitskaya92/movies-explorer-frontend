@@ -20,7 +20,7 @@ const getSortedMovies = (movies, query, isShort) => {
     (item) => item.query === query && item.isShort === isShort
   );
 
-  if (savedByQuery) {
+  if (savedByQuery && savedByQuery.list.length !== 0) {
     console.log('loaded from localStorage');
     return savedByQuery.list;
   }

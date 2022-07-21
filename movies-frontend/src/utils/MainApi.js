@@ -6,7 +6,7 @@ class MainApi {
   
     _checkResponse(res) {
       if (res.ok) {
-        return res.json();
+        return Promise.resolve(res.json());
       }
       return Promise.reject(res);
     }
